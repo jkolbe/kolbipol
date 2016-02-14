@@ -18,6 +18,8 @@
 
     <link rel="stylesheet" href="./plugin/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./plugin/owl.carousel.css">
+    <link rel="stylesheet" href="./plugin/magnific-popup.css">
 
     <link rel="stylesheet" href="./css/kolbipol.css">
 
@@ -41,7 +43,7 @@
 </head>
 
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="80">
 
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
@@ -136,10 +138,9 @@
 		<div class="content-section section-gray">
 			<div class="container">
 				<h1>Services</h1>
-				
 				<div class="row">
 					<div class="col-xs-12 text-center">
-						<h2>What we offer</h2>
+						<h2 class="heading">What we offer</h2>
 					</div>
 
 					<div class="col-xs-12 col-sm-5">
@@ -171,13 +172,10 @@
 		</div>
 		<div class="content-section section-blue">
 			<div class="container">				
-				
-
 				<div class="row">
 					<div class="col-xs-12 text-center">
-						<h2 class="heading-alt">Did you know...</h2>
+						<h2 class="heading heading-alt">Did you know...</h2>
 					</div>
-
 					<div class="col-xs-12 col-md-6">
 						<div class="fact">
 							<div class="fact-icon">
@@ -185,10 +183,10 @@
 							</div>
 							<div class="fact-body">
 								<div class="fact-body-img hidden-xs">
-									<img src="img/watering-can.png" class="img-responsive" alt="watering can">
+									<img src="img/watering-diagram.png" class="img-responsive" alt="watering diagram">
 								</div>
 								<div class="fact-body-content">
-									<p>Many times during hand watering we deliver water too fast so the soil can’t absorb it in right proportions and it becomes oversaturated. It is an inefficient way to water and in many cases watested water running onto driveways and streets.</p>
+									<p>Oscillating sprinkler <strong>loses almost 50%</strong> of water to the atmosphere before it reaches your plants and lawn. It happens because <strong>it shoots water drops in the air</strong> so high that by the time they reach your plants, half of it evaporates.</p>
 								</div>
 							</div>
 						</div>
@@ -203,47 +201,135 @@
 									<img src="img/watering-can.png" class="img-responsive" alt="watering can">
 								</div>
 								<div class="fact-body-content">
-									<p>Many times during hand watering we deliver water too fast so the soil can’t absorb it in right proportions and it becomes oversaturated. It is an inefficient way to water and in many cases watested water running onto driveways and streets.</p>
+									<p>Many times during hand watering <strong>we deliver water too fast</strong> so the soil can’t absorb it in right proportions and it becomes <strong>oversaturated</strong>. It is an inefficient way to water and in many cases watested water running onto driveways and streets.</p>
 								</div>
 							</div>
 						</div>
 					</div>
+					<div class="col-xs-12 col-md-6 col-md-offset-3">
+						<div class="fact">
+							<div class="fact-icon">
+								<img src="img/correct.png" class="img-responsive" alt="correct way to water lawns and gardens">
+							</div>
+							<div class="fact-body">
+								<div class="fact-body-img hidden-xs">
+									<img src="img/sprinkler.png" class="img-responsive" alt="sprinkler">
+								</div>
+								<div class="fact-body-content">
+									<p>The automatic irrigation system design provides <strong>efficient watering</strong> lawns and gardens and enhances plant health with no need of dragging hoses. It is designed for application of <strong>right amount of water</strong> in the best possible time. Carefully planned and designed system allows for <strong>80% of water to the plants</strong> instead of atmosphere.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content-section section-gray">
+			<div class="container">	
+				<div class="row">
+					<div class="col-xs-12 col-sm-5">
+						<div class="irrigation text-center">
+							<img src="img/question-mark.png" class="img-responsive" alt="question mark">
+							<h2>What is irrigation?</h2>
+							<p>Irrigation system is an <span>artificial application of water</span> and it is design to keep all parts of your garden <span>evenly moisture</span> through the growing season. The water level is crucial for ap- propriate health of your plants because you don’t want soil to become too wet or too dry.</p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-5 col-sm-offset-2">
+						<div class="irrigation text-center">
+							<img src="img/water-conservation.png" class="img-responsive" alt="water conservation symbol">
+							<h2>Water Conservation</h2>
+							<p>For many people using the <span>automatic irrigation</span> system may seem wasteful; however, it actually <span>uses less water than traditional hand watering</span>. Therefore, water conservation should be your principle in watering system design in your garden.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
+	<div id="gallery">
+		<div class="content-section">
+			<div class="container">
+				<h1>Gallery</h1>
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<h2 class="heading">Gallery</h2>
+					</div>
+				</div>
+				<div id="mobile-gallery" class="visible-xs">
+	                <img src="img/mobile/1.png" class="img-responsive" alt="Irrigation Image 1" />
+	                <img src="img/mobile/2.png" class="img-responsive" alt="Irrigation Image 1" />
+	                <img src="img/mobile/3.png" class="img-responsive" alt="Irrigation Image 1" />
+	                <img src="img/mobile/4.png" class="img-responsive" alt="Irrigation Image 4" />
+	            </div>
+	            <div class="image-gallery hidden-xs">
+	                <a id="image-1" href="img/1.jpg"><img src="img/1.jpg" class="img-responsive" alt="Irrigation Image 1" /></a>
+	                <a href="img/2.jpg"><img src="img/2.jpg" class="img-responsive" alt="Irrigation Image 1" /></a>
+	                <a href="img/3.jpg"><img src="img/3.jpg" class="img-responsive" alt="Irrigation Image 1" /></a>
+	                <a href="img/4.jpg"><img src="img/4.jpg" class="img-responsive" alt="Irrigation Image 1" /></a>
+	            </div>
+			</div>
+		</div>
+	</div>
+
+	<div id="contact">
+		<div class="content-section">
+			<div class="container">
+				<h1>Contact Us</h1>
+				<div class="row">
+					<div class="col-xs-12">
+						<a name="contact">
+							<h2><i class="fa fa-chevron-right green"></i> <span>PLEASE FILL IN THE FORM BELOW:</span></h2>
+						</a>
+					</div>
 				</div>
 
+				<form id="contact-form" class="contact-us-form" role="form" method="post">
+	                <div class="row">
+	                    <div class="col xs-12 col-sm-6">
+	                        <div class="form-group">
+	                            <label for="name">Name:</label>
+	                            <input type="text" class="form-control" id="name" name="name">
+	                        </div>
+	                        <div class="form-group">
+	                            <label for="category">Category:</label>
+	                            <select class="form-control" id="category" name="category">
+	                              <option>General inquiry</option>
+	                              <option>Get a quote</option>
+	                            </select>
+	                        </div>
+	                    </div>
+	                    <div class="col-xs-12 col-sm-6">
+	                        <div class="form-group">
+	                            <label for="email">Email (required):</label>
+	                            <input type="email" class="form-control" id="email" name="email" required="">
+	                        </div>
+	                        <div class="form-group">
+	                            <label for="subject">Subject:</label>
+	                            <input type="text" class="form-control" id="subject" name="subject">
+	                        </div>
+	                    </div>
+	                    <div class="col-xs-12">
+	                        <label for="message">Message (required):</label>
+	                        <textarea class="form-control form-group" rows="6" id="message" name="message" required=""></textarea>
+	                    </div>
+	                    <div class="col-xs-12 col-sm-6">
+	                        <button type="submit" name="submit" value="submit" class="btn btn-default">SEND MESSAGE</button>
+	                    </div>
+	                    <div class="col-xs-6">
+	                        <p id="form-message" class="hidden">Something went wrong. Please try again!</p>
+	                    </div>
+	                </div>
+	            </form>
 			</div>
-		</div>
-
-		<div class="content-section">
-			<div class="container">	
-				<h2>What is irrigation?</h2>
-				<h2>Water Conservation</h2>
-			</div>
-		</div>
-
-	</div>
-
-	<div class="content-section">
-		<div class="container" id="gallery">
-			<h1>Gallery</h1>
-		</div>
-	</div>
-
-	<div class="content-section">
-		<div class="container" id="contact">
-			<h1>Contact Us</h1>
 		</div>
 	</div>
 
 
 	<script src="./plugin/jquery-1.12.0.min.js"></script>
 	<script src="./plugin/bootstrap.min.js"></script>
-
-
 	<script src="./plugin/jquery.stellar.min.js"></script>
-
-
-
+	<script src="./plugin/jquery.magnific-popup.min.js"></script>
+	<script src="./plugin/owl.carousel.js"></script>
 	<script src="./js/kolbipol.js"></script>
 </body>
 </html>
