@@ -27,6 +27,7 @@ $color-secondary: #98cd00;
 .krona {font-family: 'Krona One', sans-serif;}
 .arial {font-family: 'Arial', sans-serif;}
 .blue {color:$color-primary;}
+.green {color: $color-secondary;}
 .underline {text-decoration: underline;}
 
 html, body, h1, h2, h3, h4
@@ -82,7 +83,7 @@ a.blue:hover {color: $color-primary;}
 .content-section {
 	padding:4rem 0;
 	h1 {color: transparent; display:none;}
-	h2.heading {
+	h1.heading, h2.heading {
 		@extend .krona;
 		font-size: 2rem;
 		background-color: $color-primary;
@@ -350,3 +351,56 @@ a.blue:hover {color: $color-primary;}
 	}
 }
 
+footer {
+
+	&:before{
+		display:block;
+		content: "";
+
+		position: absolute;
+		top:-100px;
+
+		height: 400px;
+	    width: 100%;
+
+	    background-repeat: repeat-x;
+	    
+
+	    background-image: url(../img/grass.png);
+	}
+
+	position: relative;
+	margin-top: 8rem;
+    background-color: $color-dark-grey;
+    padding: 7rem 0;
+    color: $color-white;
+    font-size: 1.3rem;
+
+    hr {
+    	border-color: $color-medium-grey;
+    	position: relative;
+    }
+
+    .contact-footer {
+    	p {margin-bottom: 0;}
+    	span {width: 75px; display: inline-block;}
+    }
+
+    .follow, .logos {
+    	text-align: right;
+    }
+
+    .follow {
+    	a, a:focus {
+    		i {
+    			font-size: 3.5rem;
+    			color: $color-white;
+    		}
+    	}
+    	
+    }
+
+    .logos {
+    	img {height: 2rem;}
+    }
+}

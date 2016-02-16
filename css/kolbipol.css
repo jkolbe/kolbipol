@@ -1,4 +1,4 @@
-.krona, .navbar.navbar-default.navbar-fixed-top, .content-section h2.heading, .tile .tile-header {
+.krona, .navbar.navbar-default.navbar-fixed-top, .content-section h1.heading, .content-section h2.heading, .tile .tile-header {
   font-family: 'Krona One', sans-serif;
 }
 
@@ -8,6 +8,10 @@
 
 .blue {
   color: #2ba9e3;
+}
+
+.green {
+  color: #98cd00;
 }
 
 .underline {
@@ -108,7 +112,7 @@ a.blue:hover {
   display: none;
 }
 
-.content-section h2.heading {
+.content-section h1.heading, .content-section h2.heading {
   font-size: 2rem;
   background-color: #2ba9e3;
   color: #ffffff;
@@ -119,7 +123,7 @@ a.blue:hover {
   margin-bottom: 3rem;
 }
 
-.content-section h2.heading.heading-alt {
+.content-section h1.heading.heading-alt, .content-section h2.heading.heading-alt {
   background-color: rgba(255, 255, 255, 0.4);
   margin-bottom: 4rem;
 }
@@ -196,7 +200,7 @@ a.blue:hover {
   width: calc(100% - 6.5rem);
 }
 
-.tile .tile-body .tile-body-content .krona, .tile .tile-body .tile-body-content .navbar.navbar-default.navbar-fixed-top, .tile .tile-body .tile-body-content .content-section h2.heading, .content-section .tile .tile-body .tile-body-content h2.heading, .tile .tile-body .tile-body-content .tile-header {
+.tile .tile-body .tile-body-content .krona, .tile .tile-body .tile-body-content .navbar.navbar-default.navbar-fixed-top, .tile .tile-body .tile-body-content .content-section h1.heading, .content-section .tile .tile-body .tile-body-content h1.heading, .tile .tile-body .tile-body-content .content-section h2.heading, .content-section .tile .tile-body .tile-body-content h2.heading, .tile .tile-body .tile-body-content .tile-header {
   color: #98cd00;
   margin-bottom: 1rem;
   font-size: 1.2rem;
@@ -501,4 +505,51 @@ a.blue:hover {
   #contact .contact-us-form button {
     width: 100%;
   }
+}
+
+footer {
+  position: relative;
+  margin-top: 8rem;
+  background-color: #555555;
+  padding: 7rem 0;
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+footer:before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: -100px;
+  height: 400px;
+  width: 100%;
+  background-repeat: repeat-x;
+  background-image: url(../img/grass.png);
+}
+
+footer hr {
+  border-color: #ccc;
+  position: relative;
+}
+
+footer .contact-footer p {
+  margin-bottom: 0;
+}
+
+footer .contact-footer span {
+  width: 75px;
+  display: inline-block;
+}
+
+footer .follow, footer .logos {
+  text-align: right;
+}
+
+footer .follow a i, footer .follow a:focus i {
+  font-size: 3.5rem;
+  color: #ffffff;
+}
+
+footer .logos img {
+  height: 2rem;
 }

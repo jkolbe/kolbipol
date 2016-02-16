@@ -2,7 +2,7 @@ $(document).ready(function(){
 	
 	$('#parallax').stellar({
 		horizontalOffset: 50,
-  		verticalOffset: 100
+  		verticalOffset: 0
 	});
 
 
@@ -31,6 +31,30 @@ $(document).ready(function(){
           singleItem:true,
           center: true,
           navigationText: ['<i class="fa fa-chevron-circle-left"></i>', '<i class="fa fa-chevron-circle-right"></i>']
+    });
+
+
+    $('#contact-form').on('submit', function(e){
+      e.preventDefault();
+
+      var postdata = $('#contact-form').serialize();
+      $.ajax({
+            type: 'POST',
+            url: 'subscribe.php',
+            data: postdata,
+            error: function(jqXHR, textStatus, errorMessage) {
+              $('#form-message').removeClass('hidden');
+              $('#form-message').addClass('error');
+              $('#form-message').html('Something went wrong. Please try again!');
+               // console.log(errorMessage); 
+            },
+            success: function(data) {
+              console.log(data);
+              $('#form-message').removeClass('hidden');
+              $('#form-message').addClass('success');
+              $('#form-message').html('Thank you! We\'ll get back to you shortly');
+            }
+        });
     });
 
 });
